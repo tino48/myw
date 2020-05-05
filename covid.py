@@ -14,7 +14,6 @@ print(df_CH.tail(20))
 plt.rcParams["figure.figsize"]=20,20  # Remove if not on Jupyter
 # Plot column 'Confirmed'
 df_CH.plot(kind = 'line', x = 'Date', y = 'Confirmed', color = 'blue', title = 'Schweiz')
-
 ax1 = plt.gca()
 df_CH.plot(kind = 'bar', x = 'Date', y = 'Deaths', color = 'red', ax = ax1)
 plt.show()
